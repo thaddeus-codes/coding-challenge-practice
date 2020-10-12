@@ -11,10 +11,9 @@ function isSubsequence(str1, str2) {
 
     if(str1Letter === str2Letter) {
       str1Pointer++
-      str2Pointer++
-    } else {
-      str2Pointer++
     }
+
+    str2Pointer++
   }
    return true
 }
