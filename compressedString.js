@@ -1,11 +1,10 @@
 function compressedString(str) {
 
   let i = 0;
-  let j = 1;
 
   let finalStr = ''
 
-  while(j <= str.length) {
+  for(let j = 1; j <= str.length; j++)  {
     let diff = j - i
     if(str[i] !== str[j]) {
       finalStr += str[i]
@@ -14,7 +13,6 @@ function compressedString(str) {
         finalStr += diff.toString()
       }
     }
-    j++
   }
 
   return finalStr
